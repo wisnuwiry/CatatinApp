@@ -46,9 +46,8 @@ class Contents extends Table {
   ],
 )
 class AppDatabase extends _$AppDatabase {
-  AppDatabase()
-      : super(FlutterQueryExecutor.inDatabaseFolder(
-            path: 'db.sqlite', logStatements: true));
+  AppDatabase(QueryExecutor e)
+      : super(e);
 
   @override
   int get schemaVersion => 1;

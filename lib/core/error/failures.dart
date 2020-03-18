@@ -5,4 +5,4 @@ abstract class Failure extends Equatable {
   List<Object> get props => [];
 }
 
-class DbFailure extends Failure {}
+class SqlFailure extends Failure {}

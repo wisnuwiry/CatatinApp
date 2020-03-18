@@ -28,7 +28,7 @@ class NoteDao extends DatabaseAccessor<AppDatabase> with _$NoteDaoMixin {
         note: result.readTable(notes),
         book: result.readTable(books),
       );
-    });
+    }).toList();
   }
 
   /// Return Note Detail (Content, Book)
@@ -64,7 +64,7 @@ class NoteDao extends DatabaseAccessor<AppDatabase> with _$NoteDaoMixin {
 
   Future<List<NoteWithBook>> getByBookId(int id) async {
     final rows = await (select(notes)
-          ..where((t) => t.id.equals(id))
+          ..where((t) => t.book.equals(id))
           ..orderBy(
             [
               (t) => OrderingTerm(
@@ -84,7 +84,7 @@ class NoteDao extends DatabaseAccessor<AppDatabase> with _$NoteDaoMixin {
         note: result.readTable(notes),
         book: result.readTable(books),
       );
-    });
+    }).toList();
   }
 
   Future<int> insertNote(Insertable<Note> note) => into(notes).insert(note);

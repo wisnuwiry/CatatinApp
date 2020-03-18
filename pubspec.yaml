@@ -23,6 +23,8 @@ dependencies:
   flutter_bloc: ^3.2.0
   equatable: ^1.1.0
   dartz: ^0.8.9
+  zefyr:
+    path: ./zefyr
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +32,7 @@ dev_dependencies:
   moor_generator: ^2.4.0
   build_runner: ^1.7.4
   moor_ffi: ^0.4.0
+  mockito: ^4.1.1
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
