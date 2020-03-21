@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 This project implement Clean Architecture and TDD
 
-# Note: Must Cleaning Code
+**TODO: Must Cleaning Code**
 
 Simply setup:
 
@@ -32,7 +32,7 @@ flutter run
 ### Note: This project has not been Complete
 
 If you want to see the mockup of this project, the link is below.
+[Click here](https://www.figma.com/file/e6yjTOh1yKYWGM4iYKeSTr/Catatin?node-id=0%3A1)
 
-<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fe6yjTOh1yKYWGM4iYKeSTr%2FCatatin%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-
+Image Screenshot MockUp:
 ![MockUp Catatin App](./image/mockup.png)
