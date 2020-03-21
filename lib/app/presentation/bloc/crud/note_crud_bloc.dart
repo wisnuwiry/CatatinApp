@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:catatin/app/data/note/model/note_model.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 

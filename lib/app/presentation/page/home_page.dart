@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'note/create_note_page.dart';
@@ -68,17 +69,27 @@ class _HomePageState extends State<HomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-            FlatButton(
+            // Text(
+            //   'You have pushed the button this many times:',
+            // ),
+            // Text(
+            //   '$_counter',
+            //   style: Theme.of(context).textTheme.display1,
+            // ),
+            // TextFormField(
+            //   maxLines: null,
+            // ),
+            CupertinoButton(
               child: Text('Create Note'),
-              onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) => CreateNotePage()));
+              color: Theme.of(context).primaryColor,
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => CreateNotePage(
+                      isEditing: true,
+                    ),
+                  ),
+                );
               },
             )
           ],

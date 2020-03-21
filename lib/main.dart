@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import 'app/presentation/page/home_page.dart';
 import 'app/presentation/widgets/route.dart';
 import 'core/util/constants.dart' as constant;
+import 'injection.dart' as di;
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -17,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: HomePage(title: 'CatatinApp',),
     );
   }
 }

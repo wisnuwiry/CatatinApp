@@ -6,7 +6,11 @@ abstract class NoteCrudState extends Equatable {
   @override
   List<Object> get props => [];
 }
+class Loaded extends NoteCrudState {
+  final NoteWithContent note;
 
+  Loaded({@required this.note});
+}
 class Loading extends NoteCrudState {}
 class Empty extends NoteCrudState {}
 class Error extends NoteCrudState {

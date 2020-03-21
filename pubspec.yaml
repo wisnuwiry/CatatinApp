@@ -25,6 +25,7 @@ dependencies:
   dartz: ^0.8.9
   zefyr:
     path: ./zefyr
+  get_it: ^4.0.0
 
 dev_dependencies:
   flutter_test:

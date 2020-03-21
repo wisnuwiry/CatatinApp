@@ -8,10 +8,10 @@ abstract class NoteLoadEvent extends Equatable {
 
 class GetAllNoteLoadEvent extends NoteLoadEvent {}
 
-class GetNoteDetail extends NoteLoadEvent {
+class GetNoteDetailEvent extends NoteLoadEvent {
   final int id;
 
-  GetNoteDetail({@required this.id});
+  GetNoteDetailEvent({@required this.id});
 
   @override
   List<Object> get props => [id];
